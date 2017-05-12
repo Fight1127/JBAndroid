@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     isShowingWeb = true;
                     mBrowser.loadUrl("http://www.hao123.com");
+                    mAddEdt.setText("www.hao123.com");
                     mCtrlImg.setImageResource(R.mipmap.ic_close_white_24dp);
                 }
             }

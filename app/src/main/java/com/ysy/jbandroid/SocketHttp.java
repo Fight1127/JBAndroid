@@ -53,7 +53,7 @@ public class SocketHttp {
             out = new PrintWriter(socket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             // 尝试读取Cookie
-//            loadCookies();
+            loadCookies();
 
             out.print(httpRequest());
             out.flush();
@@ -103,7 +103,7 @@ public class SocketHttp {
                 return false;
             }
             // 尝试存储Cookie
-//            saveCookies();
+            saveCookies();
 
             // Content 正文数据内容
             StringBuilder contentBuilder = new StringBuilder();
@@ -151,7 +151,7 @@ public class SocketHttp {
                 "Host: " + host + "\r\n" +
                 "User-Agent: JavaBrowser 1.0" + "\r\n" +
                 "Accept-Encoding: deflate" + "\r\n" +
-//                cookies() +
+                cookies() +
                 "\r\n";
     }
 
