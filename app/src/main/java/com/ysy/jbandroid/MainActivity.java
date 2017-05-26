@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 if (isShowingWeb) {
                     isShowingWeb = false;
                     mBrowser.loadBlank();
+                    mAddEdt.setText("");
                     mCtrlImg.setImageResource(R.mipmap.ic_add_white_24dp);
                 } else {
                     isShowingWeb = true;
